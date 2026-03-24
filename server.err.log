@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Raghu\OneDrive\Documents\Backend_Developer\flask_basics\my_flask_app\run.py", line 20, in <module>
+    from flask_migrate import Migrate
+ModuleNotFoundError: No module named 'flask_migrate'

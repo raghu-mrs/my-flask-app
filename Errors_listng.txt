@@ -1,0 +1,117 @@
+1. AttributeError: module 'pkgutil' has no attribute 'get_loader'
+
+2. ValueError: __main__.__spec__ is None
+
+*debug errors:
+(
+Missing pkgutil.get_loader
+
+__main__.__spec__ is None
+
+Import issues
+)
+
+backend next process:-
+
+What’s next for you (to continue in right direction)
+
+Step 4 → Implement UPDATE (PUT)
+This will teach you how to modify DB records.
+
+Step 5 → Implement DELETE
+This will teach you deleting records safely.
+
+Step 6 → Validations & error handling
+This makes your API cleaner.
+
+Step 7 → JWT SIGNUP + LOGIN
+Now your backend will have security.
+
+Step 8 → Protected routes
+Only logged-in users can access.
+
+Step 9 → Pagination, filtering
+To handle large data like real applications.
+
+Step 10 → ROLE (Admin, User)
+Like your company project.
+
+Step 11 → Deployment
+Host your backend online.
+
+If you complete these steps →
+You are officially a full backend developer.
+
+
+
+
+
+(❌ Error 1: No such command 'db'
+Error message:
+Error: No such command 'db'
+
+Why it happened:
+
+Flask CLI did NOT know which app to load
+
+create_app() was never executed
+
+Migrate(app, db) never ran
+
+How you fixed it:
+
+You used this (BEST way):
+
+flask --app run:create_app
+
+
+This explicitly told Flask:
+
+“My app is in run.py and create_app() builds it”
+
+✅ After that → db command appeared
+
+❌ Error 2: Target database is not up to date
+Meaning:
+
+Migration history and DB schema were out of sync
+
+You tried to create a new migration without applying old ones
+
+Rule learned:
+migrate → upgrade → migrate
+
+
+You must always upgrade before creating new migration.
+
+❌ Error 3: duplicate column name: password
+Meaning (very important):
+
+DB already had password column
+
+Flask-Migrate thought it was new
+
+This happened because:
+
+DB was created earlier using create_all()
+
+Migration history started later
+
+Why this happens:
+
+Flask-Migrate did NOT control DB from the beginning.
+
+✅ How you FIXED it (correct way)
+
+Since this is a learning project, you did the best fix:
+
+✔ Deleted migrations/
+✔ Deleted mydb.sqlite3
+✔ Started fresh with Flask-Migrate
+
+Now:
+
+Flask-Migrate OWNS the DB
+
+
+This is exactly what companies do when resetting dev DBs.)
