@@ -79,7 +79,7 @@ def create_app():
 
     @app.route("/")
     def home():
-        return "Flask is running in Docker"
+        return "User Management API is running"
 
     # Register Blueprints
     from routes.user_routes import user_bp
