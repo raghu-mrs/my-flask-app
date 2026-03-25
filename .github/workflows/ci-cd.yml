@@ -21,3 +21,10 @@ jobs:
 
     - name: Push Docker Image
       run: docker push raghumani143/my-flask-app:latest
+    - name: Set up kubeconfig
+      run: |
+        mkdir -p $HOME/.kube
+        echo "${{ secrets.KUBE_CONFIG }}" > $HOME/.kube/config
+
+    - name: Restart Kubernetes Deployment
+      run: kubectl rollout restart deployment flask-deployment
