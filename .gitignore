@@ -1,5 +1,28 @@
+# Virtual environments
 venv/
+env/
+ENV/
+.env
+
+# Python cache
 __pycache__/
 *.pyc
-mydb.sqlite3
-.env
+*.pyo
+*.pyd
+
+# Logging
+*.log
+app.log
+
+# Database
+instance/
+*.sqlite3
+migrations/
+
+# Docker
+.dockerignore
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store

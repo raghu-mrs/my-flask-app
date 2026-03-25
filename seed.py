@@ -1,20 +1,21 @@
-# seed.py
-from run import create_app
-from database.db import db
-from models.user_model import User
+from app import create_app
+from app.database.db import db
+from app.models.user_model import User
 from werkzeug.security import generate_password_hash
 
 app = create_app()
+
 with app.app_context():
-    if not User.query.filter_by(email="mani@example.com").first():
+    # Create default admin if not exists
+    if not User.query.filter_by(email="admin@example.com").first():
         admin = User(
-            name="Raghu(admin)", 
-            email="mani@example.com",
-            password =generate_password_hash("mani369"),
+            name="Super Admin",
+            email="admin@example.com",
+            password=generate_password_hash("admin123"),
             role="admin"
         )
         db.session.add(admin)
         db.session.commit()
-        print("Admin created.")
+        print("Admin user created: admin@example.com / admin123")
     else:
-        print("Admin already exists.")
+        print("Admin user already exists.")
