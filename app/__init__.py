@@ -38,6 +38,16 @@ def create_app(config_name=None):
         }), 200
 
     # Error Handlers
+    from werkzeug.exceptions import HTTPException
+
+    @app.errorhandler(HTTPException)
+    def handle_http_exception(error):
+        return jsonify({
+            "success": False,
+            "message": error.description,
+            "data": None
+        }), error.code
+
     @app.errorhandler(AppError)
     def handle_app_error(error):
         return jsonify({
