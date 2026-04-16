@@ -26,5 +26,5 @@ jobs:
         mkdir -p $HOME/.kube
         echo "${{ secrets.KUBE_CONFIG }}" > $HOME/.kube/config
 
-    - name: Restart Kubernetes Deployment
-      run: kubectl rollout restart deployment flask-deployment
+    # - name: Restart Kubernetes Deployment
+    #   run: kubectl rollout restart deployment flask-deployment
