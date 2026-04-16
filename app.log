@@ -1,0 +1,90 @@
+2026-03-25 16:41:20,042 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-03-25 16:41:20,043 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:41:20,066 - werkzeug - INFO -  * Restarting with stat
+2026-03-25 16:41:21,595 - werkzeug - WARNING -  * Debugger is active!
+2026-03-25 16:41:21,652 - werkzeug - INFO -  * Debugger PIN: 105-599-738
+2026-03-25 16:41:26,506 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2026 16:41:26] "GET / HTTP/1.1" 200 -
+2026-03-25 16:41:31,818 - app - ERROR - An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 841, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 450, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-25 16:41:32,384 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2026 16:41:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-03-25 16:52:54,318 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-03-25 16:52:54,319 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:52:54,325 - werkzeug - INFO -  * Restarting with stat
+2026-03-25 16:52:55,720 - werkzeug - WARNING -  * Debugger is active!
+2026-03-25 16:52:55,725 - werkzeug - INFO -  * Debugger PIN: 105-599-738
+2026-03-25 16:52:59,010 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2026 16:52:59] "GET / HTTP/1.1" 200 -
+2026-03-25 16:52:59,114 - app - ERROR - An unexpected error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 841, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\app.py", line 450, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\flask\ctx.py", line 353, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\Raghu\AppData\Local\Programs\Python\Python314\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-03-25 16:52:59,136 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2026 16:52:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-03-25 16:56:16,350 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-03-25 16:56:16,352 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-25 16:56:16,355 - werkzeug - INFO -  * Restarting with stat
+2026-03-25 16:56:17,698 - werkzeug - WARNING -  * Debugger is active!
+2026-03-25 16:56:17,703 - werkzeug - INFO -  * Debugger PIN: 105-599-738
+2026-03-25 16:56:20,447 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2026 16:56:20] "GET / HTTP/1.1" 200 -
+2026-03-25 16:56:20,567 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2026 16:56:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-07 17:16:32,205 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-04-07 17:16:32,242 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-07 17:16:32,292 - werkzeug - INFO -  * Restarting with stat
+2026-04-07 17:16:34,376 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 17:16:34,428 - werkzeug - INFO -  * Debugger PIN: 105-599-738
+2026-04-07 17:22:03,425 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 17:22:03] "[33mPOST /users/Create_User HTTP/1.1[0m" 404 -
+2026-04-07 17:22:42,644 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 17:22:42] "[33mPOST /Create_User HTTP/1.1[0m" 404 -
+2026-04-08 12:34:10,339 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-04-08 12:34:10,361 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-08 12:34:10,406 - werkzeug - INFO -  * Restarting with stat
+2026-04-08 12:34:11,714 - werkzeug - WARNING -  * Debugger is active!
+2026-04-08 12:34:11,837 - werkzeug - INFO -  * Debugger PIN: 105-599-738
+2026-04-08 12:34:32,327 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2026 12:34:32] "GET / HTTP/1.1" 200 -
+2026-04-08 12:34:37,567 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2026 12:34:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-08 12:35:00,553 - werkzeug - INFO - 192.168.1.10 - - [08/Apr/2026 12:35:00] "GET / HTTP/1.1" 200 -
+2026-04-08 12:35:00,679 - werkzeug - INFO - 192.168.1.10 - - [08/Apr/2026 12:35:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-16 15:33:04,894 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.16:5000
+2026-04-16 15:33:05,141 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-16 15:33:05,196 - werkzeug - INFO -  * Restarting with stat
+2026-04-16 15:33:47,166 - werkzeug - WARNING -  * Debugger is active!
+2026-04-16 15:33:48,076 - werkzeug - INFO -  * Debugger PIN: 105-599-738
